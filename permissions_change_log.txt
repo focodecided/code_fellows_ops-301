@@ -1,0 +1,18 @@
+-------------------------
+Permissions change log
+Directory: /home/fooguheb/Documents/TEST/
+New Permissions: 777
+-------------------------
+Changed permissions of /home/fooguheb/Documents/TEST//* to 777
+-------------------------
+Permissions change log
+Directory: /home/fooguheb/Documents/TEST/
+New Permissions: 777
+-------------------------
+Changed permissions of /home/fooguheb/Documents/TEST//* to 777
+-------------------------
+Permissions change log
+Directory: /home/fooguheb/Documents/TEST
+New Permissions: 777
+-------------------------
+Changed permissions of /home/fooguheb/Documents/TEST/* to 777
