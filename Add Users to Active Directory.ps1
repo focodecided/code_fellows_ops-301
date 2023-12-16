@@ -59,5 +59,19 @@ foreach ($user in $users) {
     $email = $user.Email
 
     # Create the new user
-    New-ADUser -GivenName $firstName -Surname $lastName -SamAccountName $username -Title $jobTitle -Department $department -Company $company -Office $office -EmailAddress $email -AccountPassword (ConvertTo-SecureString "P@ssw0rd" -AsPlainText -Force) -Enabled $true
+    $securePassword = ConvertTo-SecureString "TempP@ssw0rd" -AsPlainText -Force
+    $userParams = @{
+        GivenName = $firstName
+        Surname = $lastName
+        SamAccountName = $username
+        Title = $jobTitle
+        Department = $department
+        Company = $company
+        Office = $office
+        EmailAddress = $email
+        AccountPassword = $securePassword
+        Enabled = $true
+        ChangePasswordAtLogon = $true  # Set to force password change at next logon
+    }
+    New-ADUser @userParams
 }
